@@ -1,0 +1,11 @@
+version: '3.7'
+services:
+  confi_server:
+    build:
+      context: .
+    image: config_server:lastest
+    expose:
+      - 8080
+    ports:
+      - "8090:8080"
+    container_name: config_server
